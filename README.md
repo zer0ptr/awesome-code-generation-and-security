@@ -492,16 +492,6 @@ To help bridge the preceding gap, in this paper, we propose a benchmark named Co
 >  Recent advancements in the field of natural language generation have facilitated the use of large language models to assess the quality of generated text. Although these models have shown promising results in tasks such as machine translation and summarization, their applicability in code intelligence tasks remains limited without human involvement. The complexity of programming concepts required for such tasks makes it difficult to develop evaluation metrics that align with human judgment. Token-matching-based metrics, such as BLEU, have demonstrated weak correlations with human practitioners in code intelligence tasks. Moreover, utilizing human-written test suites to evaluate functional correctness can be challenging in domains with low resources. To overcome these obstacles, we propose \texttt{ICE-Score}, a new evaluation metric via instructing large language models (LLMs) for code assessments. Our metric addresses the limitations of existing approaches by achieving superior correlations with functional correctness and human preferences, without the need for test oracles or references. We evaluate the efficacy of our metric on two different aspects (\textit{human preference} and \textit{execution success}) and four programming languages. Our results demonstrate that our metric surpasses state-of-the-art metrics for code generation, delivering high levels of accuracy and consistency across various programming languages and tasks. We also make our evaluation metric and datasets available to the public\footnote{\url{this https URL}}, encouraging further research in evaluating code intelligence tasks.
 </details>
 
---------------------------------------------------------------------------------------------------------------------------
-
-#### [arXiv'25] A Systematic Evaluation of Parameter-Efficient Fine-Tuning Methods for the Security of Code LLMs
-
-[[paper]](https://arxiv.org/pdf/2509.12649)  
-
-<details>
-  <summary>Click to see the abstract!</summary>
->  Code-generating Large Language Models (LLMs) significantly accelerate software development. However,their frequent generation of insecure code presents serious risks. We present a comprehensive evaluationof seven parameter-efficient fine-tuning (PEFT) techniques, demonstrating substantial gains in secure codegeneration without compromising functionality. Our research identifies prompt-tuning as the most effectivePEFT method, achieving an 80.86% Overall-Secure-Rate on CodeGen2 16B, a 13.5-point improvement overthe 67.28% baseline. Optimizing decoding strategies through sampling temperature further elevated security to87.65%. This equates to a reduction of approximately 203,700 vulnerable code snippets per million generated.Moreover, prompt and prefix tuning increase robustness against poisoning attacks in our TrojanPuzzleevaluation, with strong performance against CWE-79 and CWE-502 attack vectors. Our findings generalizeacross Python and Java, confirming prompt-tuning’s consistent effectiveness. This study provides essentialinsights and practical guidance for building more resilient software systems with LLMs.
-</details>
 
 ## 1.3 Others
 
@@ -908,6 +898,16 @@ Our experiments show that our method outperforms the baseline solutions and asse
 </details>
 
 
+--------------------------------------------------------------------------------------------------------------------------
+
+#### [arXiv'25] A Systematic Evaluation of Parameter-Efficient Fine-Tuning Methods for the Security of Code LLMs
+
+[[paper]](https://arxiv.org/pdf/2509.12649)  
+
+<details>
+  <summary>Click to see the abstract!</summary>
+>  Code-generating Large Language Models (LLMs) significantly accelerate software development. However,their frequent generation of insecure code presents serious risks. We present a comprehensive evaluationof seven parameter-efficient fine-tuning (PEFT) techniques, demonstrating substantial gains in secure codegeneration without compromising functionality. Our research identifies prompt-tuning as the most effectivePEFT method, achieving an 80.86% Overall-Secure-Rate on CodeGen2 16B, a 13.5-point improvement overthe 67.28% baseline. Optimizing decoding strategies through sampling temperature further elevated security to87.65%. This equates to a reduction of approximately 203,700 vulnerable code snippets per million generated.Moreover, prompt and prefix tuning increase robustness against poisoning attacks in our TrojanPuzzleevaluation, with strong performance against CWE-79 and CWE-502 attack vectors. Our findings generalizeacross Python and Java, confirming prompt-tuning’s consistent effectiveness. This study provides essentialinsights and practical guidance for building more resilient software systems with LLMs.
+</details>
 
 
 
